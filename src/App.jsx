@@ -107,6 +107,46 @@ const Mine = () => {
 }
 
 function App() {
+  const [unlocked, setUnlocked] = useState(false)
+  const [pwd, setPwd] = useState('')
+  const requiredPass = import.meta.env.VITE_PREVIEW_PASS || 'biggames01'
+
+  useEffect(() => {
+    if (localStorage.getItem('previewUnlocked') === '1') setUnlocked(true)
+  }, [])
+
+  const tryUnlock = () => {
+    if (pwd === requiredPass) {
+      setUnlocked(true)
+      localStorage.setItem('previewUnlocked', '1')
+    }
+  }
+
+  if (!unlocked) {
+    return (
+      <div style={{ position: 'fixed', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'radial-gradient(ellipse at center, rgba(0,0,0,0.85), rgba(0,0,0,0.95))', zIndex: 9999 }}>
+        <div style={{ padding: '24px 28px', border: '2px solid rgba(0,255,255,0.85)', boxShadow: '0 0 18px rgba(0,255,255,0.6)', borderRadius: 12, background: 'rgba(0,0,0,0.6)', color: '#7efcff', minWidth: 'min(90vw, 420px)', textAlign: 'center' }}>
+          <div style={{ fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 12, textShadow: '0 0 12px rgba(0,255,255,0.9)' }}>Enter Preview Password</div>
+          <input
+            type="password"
+            value={pwd}
+            onChange={(e) => setPwd(e.target.value)}
+            onKeyDown={(e) => { if (e.key === 'Enter') tryUnlock() }}
+            style={{ width: '100%', padding: '10px 12px', borderRadius: 8, border: '1.5px solid rgba(0,255,255,0.8)', background: 'rgba(0,0,0,0.4)', color: '#7efcff', outline: 'none', marginBottom: 12 }}
+            aria-label="Preview password"
+          />
+          <button
+            onClick={tryUnlock}
+            style={{ width: '100%', padding: '10px 12px', borderRadius: 8, border: '1.5px solid rgba(0,255,255,0.9)', background: 'transparent', color: '#7efcff', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em', cursor: 'pointer', textShadow: '0 0 10px rgba(0,255,255,0.8)' }}
+          >
+            Unlock
+          </button>
+          <div style={{ fontSize: 12, opacity: 0.85, marginTop: 10 }}>Protected preview</div>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <Router>
       <Routes>

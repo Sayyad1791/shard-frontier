@@ -24,9 +24,9 @@ const Dashboard = () => {
       <div
         style={{
           position: 'relative',
-          // 9:16 portrait canvas that scales to the viewport
-          width: 'min(100vw, calc(100vh * (9/16)))',
-          height: 'min(100vh, calc(100vw * (16/9)))',
+          // 9:16 portrait canvas sized from viewport width for mobile: edges touch left/right
+          width: '100vw',
+          height: 'calc(100vw * (16/9))',
         }}
       >
         <img
