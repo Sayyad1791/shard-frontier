@@ -1,3 +1,15 @@
+# Shard Frontier
+
+## Public Demo
+
+- URL: https://biggames.netlify.app/
+- Password: biggames01
+
+## Project Overview PDF
+
+- Download: public/SHARD_PROJECT_OVERVIEW_SHORT.pdf
+- On the deployed site (once published): https://biggames.netlify.app/SHARD_PROJECT_OVERVIEW_SHORT.pdf
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
