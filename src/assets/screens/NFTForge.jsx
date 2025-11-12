@@ -3,7 +3,7 @@ import { useAccount, useWalletClient, usePublicClient } from 'wagmi'
 import { parseEther } from 'viem'
 import { useWeb3Modal } from '@web3modal/wagmi/react'
 import '../../App.css'
-import nftForgeImage from '../nftforge.png'
+import nftForgeImage from '../NFTForge.png'
 import BackButton from '../../components/BackButton'
 
 const NFTForge = () => {
