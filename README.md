@@ -10,7 +10,7 @@
 
 - Download on GitHub: docs/SHARD_PROJECT_OVERVIEW_SHORT.pdf
 
-  ## Project Technical Detail PDF
+## Project Technical Detail PDF
 
 - Download on GitHub: docs/SHARD_PROJECT_FULL_TECHNICAL.pdf
 
