@@ -7,8 +7,7 @@
 
 ## Project Overview PDF
 
-- Download: public/SHARD_PROJECT_OVERVIEW_SHORT.pdf
-- On the deployed site (once published): https://biggames.netlify.app/SHARD_PROJECT_OVERVIEW_SHORT.pdf
+- Download on GitHub: docs/SHARD_PROJECT_OVERVIEW_SHORT.pdf
 
 # React + Vite
 
