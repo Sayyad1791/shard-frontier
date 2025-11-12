@@ -10,6 +10,10 @@
 
 - Download on GitHub: docs/SHARD_PROJECT_OVERVIEW_SHORT.pdf
 
+  ## Project Technical Detail PDF
+
+- Download on GitHub: docs/SHARD_PROJECT_FULL_TECHNICAL.pdf
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
