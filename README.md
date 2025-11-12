@@ -1,7 +1,8 @@
 # Shard Frontier
 
-## Public Demo
+## Public Prototype Demo
 
+- Mobile version only
 - URL: https://biggames.netlify.app/
 - Password: biggames01
 
