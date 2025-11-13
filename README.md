@@ -3,7 +3,7 @@
 ## Public Prototype Demo
 
 - Mobile version only
-- URL: https://shard-frontier-production.up.railway.app/home
+- URL: https://shard-frontier-production.up.railway.app/start
 - Password: biggames01
 
 ## Project Overview PDF
