@@ -247,8 +247,12 @@ const Home = () => {
                     textTransform: 'uppercase',
                     fontWeight: 900,
                     letterSpacing: '0.1em',
-                    fontSize: isStart ? 'clamp(16px, 3vh, 24px)' : 'clamp(14px, 2.6vh, 21px)',
-                    whiteSpace: 'nowrap',
+                    fontSize: item.label === 'GAME INSTRUCTIONS' 
+                      ? 'clamp(12px, 2.2vh, 18px)'  
+                      : isStart 
+                        ? 'clamp(16px, 3vh, 24px)' 
+                        : 'clamp(14px, 2.6vh, 21px)',
+                    whiteSpace: 'normal',
                     textShadow: glow,
                     display: 'flex',
                     alignItems: 'center',
