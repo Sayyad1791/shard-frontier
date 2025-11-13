@@ -3,7 +3,7 @@
 ## Public Prototype Demo
 
 - Mobile version only
-- URL: https://biggames.netlify.app/
+- URL: https://shard-frontier-production.up.railway.app/home
 - Password: biggames01
 
 ## Project Overview PDF
