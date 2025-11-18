@@ -1,7 +1,7 @@
-// x1Routes.js
-const express = require("express");
+import express from "express";
+import db from "./db.js";
+
 const router = express.Router();
-const db = require("./db");
 
 // Test route
 router.get("/ping", (req, res) => {
@@ -94,4 +94,4 @@ res.status(500).json({ error: "Server error" });
 }
 });
 
-module.exports = router;
+export default router;
