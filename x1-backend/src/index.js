@@ -1,4 +1,4 @@
-import x1Routes from "./x1Routes.js";
+// import x1Routes from "./x1Routes.js";
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
@@ -17,7 +17,7 @@ return res.status(401).json({ ok: false, error: "Unauthorized" });
 }
 next();
 }
-app.use("/x1", x1Routes);
+// app.use("/x1", x1Routes);
 
 // Simple root route
 app.get("/", (req, res) => {
