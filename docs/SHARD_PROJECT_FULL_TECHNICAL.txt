@@ -1,551 +1,0 @@
-SHARD FRONTIER — GAME DESIGN & ECOSYSTEM INTEGRATION PLAN V1
-
-
-
-	1	INDEX / CONTENTS
-	2	Introduction & Vision
-	3	Core Game Concept — “The Frontier Wakes”
-	4	Gameplay & Homebase (Dash) Systems
-	5	Phase 1 — Core Surface Mining
-	6	Phase 2 — NFT Systems & Trait Matrix (Final)
-	7	Phase 3 — Zeus Expansion (DAO, Pools, Bridge UX)
-	8	Phase 4 — Hover Miner Expansion (POE/POW, Gunner)
-	9	Phase 5 — TGE & Mainnet Transition
-	10	Ecosystem Integration & Rarible Strategy
-	11	Post-TGE Expansion & Future Worlds
-	12	Community Systems — DAO, Beta, Rewards
-	13	Project Folder & Development Workflow
-	14	Strategic Outcomes & KPIs
-
-
-
-2. INTRODUCTION AND VISION
-Shard Frontier is the flagship Web3 game concept designed to bring together the BlockDAG Network ecosystem, NFT ownership, and casual mobile gameplay in a way that appeals both to long-term investors and new retail users. The project’s goal is to transform BlockDAG’s technological roadmap—from testnet to mainnet—into an interactive experience that showcases the chain’s speed, transparency, and creativity.
-Players collect resources, craft items, and mint unique NFTs that live natively on the BlockDAG network while linking outward to Ethereum and Rarible for global visibility. Each stage of gameplay aligns with a real-world phase of BlockDAG development so that community growth, token launches, and network upgrades are reflected inside the universe of the game itself.
-Seasons, events, and DAO votes can grant limited Award NFTs—prestige items with strictly bounded cap-breaker rules—to celebrate standout play and cultural milestones.
-
-This structure makes Shard Frontier more than a game: it’s a live engagement layer for BlockDAG, bridging miners, investors, and players in a single cultural ecosystem.
-
-
-3. CORE GAME CONCEPT – “THE FRONTIER WAKES”
-The first pulse of light came from beneath the dust. Long dormant, the surface of DAG-9 shimmered—tiny fractures of luminescence breaking through the stone. They called them shards: fragments of an ancient technology scattered across worlds, waiting for rediscovery.
-In this new frontier, players are not soldiers—they are pioneers. Each begins with a simple mining buggy, humming and battered, its scanner tuned to the faint whisper of crypto-ore buried deep below. Every strike of the drill, every pulse of energy, brings the player closer to unlocking new alloys, unknown elements, and secrets from a forgotten civilisation.
-But this is no idle dig. The deeper you mine, the stranger things become—unstable matter, rogue meteor storms, alien scavengers—and within the chaos, fragments of rare power: legendary shards. Each shard carries a signature, a code, part of a vast design.
-These pieces can be combined, crafted, and ultimately minted into digital artefacts—NFTs of immense power and rarity. Each minted artefact isn’t just a trophy—it’s a living part of your craft, visible, functional, tradable, and tied forever to your name on the blockchain.
-As you rise from the ground colonies to the orbiting outposts, and finally into the black beyond, your ship evolves—from drill buggy to hovercraft, to battle-ready interceptor, and eventually to an interstellar voyager. Every upgrade tells your story; every choice reflects your play style.
-Beyond the asteroid belts lie new worlds—each representing a different crypto realm. ETH planets rich in energy crystals, BDAG moons that hum with resonance, and alien systems representing cross-chain possibilities yet unseen.
-It’s not about chance; it’s about persistence, strategy, and the thrill of finding value where none existed before. In Shard Frontier, players are both miners and makers—discovering the next evolution of play-to-engage, where skill, time, and discovery converge into digital ownership.
-The frontier is waking. The shards are calling. Only those with the courage to mine the unknown will forge the future.
-
-
-4. GAMEPLAY AND DASH / HOMEBASE SYSTEMS
-4.1 Purpose
-The homebase represents the player’s command centre. All mining, crafting, upgrades, and blockchain interactions flow through this interface. It must be intuitive enough for mobile users while still immersive and expandable for long-term players.
-4.2 Layout Overview
-The dash is divided into modular rooms:
-	•	Profile Bay: displays player stats, achievements, wallet connection, and time played.
-	•	Forge Bay: where ore is deposited, refined, and combined into shards.
-	•	Vehicle Garage: upgrade hub for buggy, hover, and spacecraft modules.
-	•	Map Room: navigates discovered zones and monitors ore signal activity.
-	•	Medal Cabinet: displays earned medals and NFT badges for achievements, miner ownership, or presale participation. Mounted NFTs (3 Slots) with Wallet Link (Mount / Swap / Remove).
-	•	Multiplayer Hub: greyed-out placeholder for future team missions.
-	•	Leaderboard Terminal: global ranking board with filters for solo and guild stats.
-	•	Marketplace Link (BDAG layer opens in-game): direct gateway to Rarible or OKX NFT listings via connected wallet.
-Each section is rendered in 9:16 format for mobile clarity and supports vertical or swipe navigation.
-4.3 Visual Direction
-Environment tone: warm desert daylight, amber dust, and metallic highlights. Interface design: holographic teal overlays with minimal glow, clean BDAG branding, and faint ambient motion to imply depth. User feedback cues: slight haptic buzz or soft audio click when interacting with menus. Ambient backdrop: low wind sound and reactor hum for immersion.
-4.4 Player Loop
-	1	Check dashboard (energy, ore storage, current mission).
-	2	Tune loadout (mount/swap NFTs).
-	3	Deploy miner or hover vehicle.
-	4	Collect ore / complete mission.
-	5	Return to base, refine, and craft shards.
-	6	Upgrade equipment or mint NFTs.
-	7	Engage in community or leaderboard challenges.
-The loop is designed for 5- to 7-minute mobile sessions with steady progression pacing.
-4.5 Notifications and Mission Feed
-A subtle command feed runs along the top border of every dash screen. It pushes mission alerts, event notices, or limited-time offers. Selecting a feed item opens a compact mission log listing objectives, rewards, and countdown timers. Feed may announce event_tag windows (e.g., Ion Tempest) that affect cosmetic mutation odds.
-4.6 Menu Design
-All interactive buttons use consistent metallic geometry with faint angular borders to keep the UI visually cohesive across future modules. Critical actions (Deploy, Forge, Mint) use amber highlights; secondary actions (Inspect, Compare, Cancel) use muted silver tones. Language selection and settings are accessible from a small dropdown icon in the upper right corner.
-4.7 Base Progression and Expansion
-As players advance, additional bays and equipment become available within the homebase. Early levels focus on efficiency and upgrading mining gear; later levels unlock entirely new functionality such as autonomous drones, expanded silos, and decorative modules. Each upgrade is visual and practical—every new structure appears physically in the player’s base.
-Expansion milestones:
-	•	Level 5 – Unlocks Forge automation.
-	•	Level 10 – Opens Map Room advanced zones.
-	•	Level 15 – Enables Drone Dock (automated collectors).
-	•	Level 20 – Adds Data Relay for leaderboards and community events.
-Progression ensures that casual players always have reachable goals while giving committed players tangible proof of dedication.  Unlock note: Wallet Link + Mounted NFTs panel unlocks at Level 10 (tunable).
-4.8 Resource and Energy Systems
-Energy Credits are the core operational currency. Each mission consumes Energy; Energy recharges slowly over time or instantly by returning to base. Rare ore types may also yield small Energy charges when refined, encouraging continuous play.
-Ore is stored in the Ore Silo and visibly fills containers. When storage is full, players must either forge shards or upgrade capacity. Visual indicators keep players aware of current capacity and energy status at a glance.
-4.9 Forge Automation and Queue Management
-Players can queue ore for refinement while offline. Each refinement cycle has a timer depending on ore rarity. The automation system ensures that progress continues without constant manual input, aligning with Proof of Engagement principles. Upgrades reduce cycle time or increase the number of concurrent jobs. Combine results show mutation toasts and log the pity meter state; Stabilise (if owned) is offered post-result.
-4.10 Narrative Hooks Inside Homebase
-Homebase terminals periodically display lore entries or transmissions from the frontier. These messages seed future events and encourage players to return daily. Narrative content is stored client-side to allow seasonal updates without chain interactions. (reference origin_phase / event_tag snippets in terminal transmissions)
-
-
-5. PHASE 1 – CORE SURFACE MINING
-5.1 Purpose
-Phase 1 establishes the foundational mining mechanics that form the heart of Shard Frontier. It introduces resource collection, refinement, and the first loop of reward progression. This phase corresponds to BlockDAG’s initial testnet era — players begin at ground level with direct interaction to on-chain logic for resource tracking.
-5.2 Gameplay Loop
-	1	Deploy miner vehicle from base.
-	2	Navigate flat terrain to find ore fields.
-	3	Extract resources using drill or scoop mechanic.
-	4	Return to base and off-load ore to silo.
-	5	Refine ore into shards via Forge.
-	6	Use shards to craft upgrades, combine shards, and mint NFTs (when enabled).
-The loop is designed for short mobile sessions (5–7 minutes) but with cumulative progression.
-5.3 Mining Mechanics
-Two core tools are available in this phase:
-	•	Vacuum Collector: A surface suction device that collects loose ore particles from glowing patches. Simple, safe, and ideal for beginners.
-	•	Drill Lance: Used for deeper nodes and solid crystals. Requires energy charge and timing; successful use yields larger quantities of rare ore.
-Mining areas are visually distinct — glowing or shimmering fields on the map indicate potential resource veins. The sound and light feedback guide players toward valuable nodes without needing complex UI elements.
-5.4 Ore Classes and Rarity
-Tier
-Description
-Yield
-Use
-Dust
-Abundant surface material
-Low
-Basic crafting
-Alloy
-Mid-depth material
-Moderate
-Advanced upgrades
-Crystal
-Hidden nodes
-High
-Shard fusion
-Relic
-Event-based anomalies
-Very High
-NFT creation
-Each rarity tier has unique colour and particle effects. Legendary ores appear in limited-time events or community missions.
-5.5 Proof of Engagement (POE) Mechanic
-Mining runs consume Energy Credits. If the player leaves the game idle, mining continues for up to one hour before the miner automatically returns to base (Auto-Pilot Mk II upgrade). POE data is recorded on-chain and verified through session logs to ensure authentic interaction.
-Upgrading reactor modules extends operational time and efficiency. Daily reactivation button press mirrors the real X1 and X10 device pattern, building brand familiarity and consistent user behaviour.
-5.6 Upgrades and Crafting
-Players spend refined ore to create vehicle components or forge new shards. Higher-grade ore reduces crafting time, encouraging players to seek rarer materials.
-Upgrade categories:
-	•	Drill Heads (faster extraction)
-	•	Cargo Holds (larger capacity)
-	•	Reactor Cores (longer sessions)
-	•	Scanners (wider detection radius)
-	•	Mobility Systems (faster travel)
-Each upgrade has visible aesthetic changes and affects the vehicle’s performance metrics.
-5.7 Map and Zones
-The starter map — Dunes Basin — is a flat desert environment with ambient wind and minimal obstacles. As players progress, they unlock new zones:
-	1	Canyon Run – narrow corridors and vertical mining.
-	2	Crystal Plains – dense Rare Ore fields.
-	3	Obsidian Fault – unstable volcanic region with Legendary potential.
-Each zone introduces a new environmental mechanic (stability, temperature, energy drain) to expand complexity without adding grind.
-5.8 NFT and Reward Linkage
-Refined, or combined shards can be combined into unique NFTs.  Machine parts & combined shards trade on the BDAG testnet marketplace; full NFTs mint per Mode A/B. During the testnet phase, minting is simulated within the game client or active with BDAG NFTs; metadata stored on-chain and mirrored when applicable.
-Rewards earned through mining translate to Energy Credits and potential BDAG token rewards. Seasonal events and leaderboards encourage continuous engagement.
-5.9 Anti-Abuse and Integrity Controls
-To prevent automation exploits:
-	•	Session verification uses Proof-of-Play metrics.
-	•	Device fingerprinting monitors unique IDs (non-intrusive).
-	•	Claim rates are limited per day to discourage bot farms.
-	•	Random micro-events (prompt re-engagement) verify player presence.
-5.10 Visual and Audio Direction
-Visual style: daylight desert, muted colour palette with vibrant ore highlights. Audio: soft wind, mechanical drill hum, low reverb for open space. Interaction sounds: short industrial clicks and reactor tones for feedback. All audio kept under 40 dB average to be comfortable for mobile play.
-5.11 Deliverables for Phase 1
-	1	Text Document – Surface Mining Design v1.0 (complete).
-	2	Render Prompts – Mining Vehicle, Ore Silo, Forge Bay, HUD elements.
-	3	Flow Diagram – Mine → Refine → Craft → Upgrade → Repeat.
-	4	Integration Hook – POE data to testnet smart contract.
-	5	Marketplace v1 spec (testnet)” and “Combine UI with mutation toasts.
-
-
-6. PHASE 2 — NFT SYSTEMS & TRAIT MATRIX (Final Draft with Award Cap-Breakers)
-6.1 Introduction (Creative Framing)
-The shards weren’t born perfect. They were coaxed from dust, pressed into form, and only then given a name. In Shard Frontier, value emerges from what you do: collect ore, forge shards, combine shards, and mint what you’ve truly made. Simple to learn. Deep to master.
-
-6.2 Canonical Pipeline
-Collect Ore → Forge Shards → Combine Shards → Mint NFT No extra steps. No hidden systems. This is the spine of ownership.
-
-6.3 Ore → Shard → NFT Rarity Mapping
-Ore tiers (gameplay materials)
-	•	Dust Ore — Amber (common)
-	•	Alloy Ore — Titanium/Silver (industrial, machine-part grade)
-	•	Crystal Ore — Ion Teal/Blue (scarce)
-	•	Relic Ore — Iridescent/Holographic (ancient/event)
-Shard & NFT rarities (parallel colors)
-	•	Raw (Amber) • Refined (Titanium/Silver) • Rare (Teal/Blue) • Legendary (Iridescent/Holographic)
-Color continuity: silos → forge UI → shard cards → minted NFTs.
-
-6.4 Inventory, Crafting & Marketplace Rules
-	•	Inventory: Ore and single (uncombined) shards stay in inventory (capacity-capped; expandable).
-	•	Tradables (on-chain): Machine parts and combined shards trade on the BlockDAG in-game marketplace(testnet → mainnet).
-	•	Minting: Only combined shards that meet eligibility progress to full collectible NFTs.
-
-6.5 Operating Modes (same UX; config choice)
-Mode A — Rarible-first (optional pre-TGE window)
-	•	BDAG testnet marketplace active for parts/combined shards.
-	•	Allow full NFT mints to a Rarible (ETH) collection during Awakening/Zeus if desired (supporting wBDAG alignment).
-	•	Post-TGE: BDAG↔ETH mirrors as configured.
-Mode B — BDAG-first (Rarible after TGE)
-	•	Awakening/Zeus: BDAG testnet only (trade machine parts/combined shards as testnet NFTs).
-	•	TGE/Mainnet: conversion event upgrades eligible combined shards → mainnet mints on BDAG; optional ETH mirrors thereafter.
-
-6.6 Mounted NFTs (3-Slot Loadout)
-	•	Mount up to 3 NFTs (Medal Room → Mounted NFTs) via wallet link (Mount / Swap / Remove).
-	•	Perks nudge Mining or Flight/Gunner (and minor QoL).
-	•	Swap cooldown: ~10–15 min. Mission lock: loadout fixed on launch.
-	•	No duplicate token IDs mounted; transferred NFTs auto-unmount on check/mission end.
-	•	Award limit: Only one (1) Award NFT may be mounted at a time.
-Perk buckets & soft caps (baseline)
-	•	Mining: Efficiency +≤6%, Capacity +≤6%, Control +≤4%
-	•	Flight/Gunner: Speed +≤6%, Control +≤4%, Efficiency +≤4%
-	•	QoL: any single QoL +≤4%
-	•	Stacking: Primary @100%, Secondary @50%; excess beyond caps = 25% effectiveness.
-	•	Set bonus (optional): 3 items sharing family_tag grant +2% in that family’s favored bucket (may exceed cap by +1%).
-Award overcaps (see §6.10) can let you step slightly past these baseline caps under strict rules.
-
-6.7 Trait Matrix v2 (Simple, Transparent, Deep)
-Axes (always present)
-	1	Rarity: Raw / Refined / Rare / Legendary
-	2	Functions (2 lines): Primary + Secondary from { Speed, Efficiency, Capacity, Control }
-	3	Visual Finish (by rarity): matte amber → brushed titanium → crystalline prismatic → iridescent/holographic
-Lightweight enrichment (tags, not extra stats)
-	•	family_tag: Solar (efficiency tilt) / Quantum (mobility) / Void (control) / Genesis (commemorative) — tiny roll bias; seasonal filters/rules.
-	•	Provenance hooks: origin_phase (Awakening/Zeus/Mainnet …) + event_tag (Launch Week, Ion Tempest, Canyon Run Cup, Partner Drop).
-Default roll weights (tunable)
-	•	Raw 60/20/15/5 • Refined 40/30/20/10 • Rare 30/30/25/15 • Legendary 25/25/25/25 (Eff/Cap/Speed/Control).
-6.7.1 Mutation & Luck (Controlled, Fair, Collectible)
-Lives in Combine Shards only; Mint step stays clean.
-	1	Micro-Mutation (power-capped): ~6% base → tiny Primary bump (+0.5–1.0%); converts to cosmetic if over cap.
-	2	Cosmetic-First Shift (rarity-gated): ~10–12% on Rare/Legendary combines → alternate finish (e.g., Iridescent Arc). If used in a 3-item family set, +0.5% set amplifier (respects the +1% over-cap window).
-	3	Pity Meter: +2% per failed mutation roll, up to +10%, then reset on success.
-	4	Daily Luck Seed: first successful combine each day gets a mild +3% cosmetic bias or a one-time Secondary reroll token.
-	5	Stabilize (game-earned): 1 use per item lifetime; reroll Secondary or Finish only; never raises baseline caps.
-Guardrails: Mutations never exceed baseline caps; any overflow becomes cosmetic. (Award overcaps are handled separately in §6.10.)
-
-6.8 Metadata (Schema-Agnostic, Mirror-Friendly)
-	•	rarity • functions {primary, secondary} • finish
-	•	origin_phase • event_tag • family_tag (optional)
-	•	display_color • provenance_note (optional)
-	•	mutation_flag (optional) • mutation_note (optional) • mutation_proof (optional)
-
-6.9 Anti-Abuse & Fairness
-Daily claim/forge tuning, perk caps + diminishing returns, and leaderboards with Open (perks on) vs Core (normalized). Award overcaps are normalized away in Core ladders.
-
-6.10 Unique Award NFTs (Hybrid Class, Cap-Breaker Policy)
-Purpose: prestige-forward collectibles granted by DAO choice or specific events (e.g., top leaderboard, multiplayer champions, curated partner drops). They may break baseline caps slightly to feel truly special—within tight, auditable limits.
-Award types
-	•	Achievement Editions: personal feats (e.g., Season Top-10 Miner, Ion Tempest Survivor).
-	•	Team Editions: multiplayer highest-score squads; embeds team_id and roster in metadata.
-	•	DAO Editions: limited runs approved by DAO for cultural milestones or collabs.
-Cap-Breaker model (tight, transparent)
-	•	Overcap Window (OCW): an Award NFT can allow its designated bucket to exceed the baseline cap by a small, fixed amount.
-	◦	Achievement: up to +1% OCW on its bucket.
-	◦	Team: up to +2% OCW on its bucket during the awarding season, then decays to +1% OCW thereafter.
-	◦	DAO: 0–3% OCW (exact value approved per edition by DAO); if >2%, it must be time-boxed to a named season or event.
-	•	Global Overcap Ceiling: regardless of edition, total active overcap across the loadout cannot exceed +3%beyond baseline caps (after set bonuses).
-	•	One-Award Rule: you may mount only one Award NFT at a time; its OCW applies only to the bucket it names.
-	•	Stack Behavior: when OCW is active, normal diminishing returns still apply; OCW simply raises the hard stopfor that bucket by the awarded amount (up to the Global +3%).
-	•	Season Decay: if an Award has season-limited OCW, it auto-decays on season end (keeps cosmetic/provenance; OCW reduced to its post-season value or 0 depending on edition rules).
-Competitive integrity
-	•	Leaderboards:
-	◦	Core (normalized): ignores all OCW—scores computed at baseline caps.
-	◦	Open: OCW fully applies.
-	•	PvP/Ranked: playlists may run Core normalization only, with Open available for exhibitions and fun runs.
-Market integrity
-	•	Supply: explicit edition caps (e.g., /25, /100).
-	•	Disclosure: each Award’s OCW appears on the card and in metadata (clear bucket, value, and any expiry).
-	•	Transferability: per edition—tradable by default; optionally time-locked (e.g., 30-day hold) or non-transferablefor SBT-style honors (rare).
-Metadata (additions for awards)
-	•	award_class: Achievement | Team | DAO
-	•	award_source: e.g., “Zeus S1 Leaderboard”, “DAO Vote #12”, “Tempest Cup Finals”
-	•	edition_size: integer (e.g., 25)
-	•	ocw: { bucket: "Efficiency|Capacity|Speed|Control", value_pct: 1|2|3, expires_at: ISO8601|null }
-	•	award_lock (optional): ISO datetime until tradable, or “non-transferable”
-	•	team_id (optional): hash/ID for team awards
-Net effect: Awards feel meaningfully special with a small, bounded edge, stay fair in ranked play, and remain highly collectible via provenance and edition scarcity.
-
-6.11 Partner & Legacy Integration
-	•	Rarible (ETH): public storefront (Mode A pre-TGE or Mode B post-TGE). Supports wBDAG alignment and optional BDAG↔ETH mirroring.
-	•	OKX “BlockDAG Diamond” (legacy): detected in wallet; grants cosmetic/QoL legacy badge/skin. Not part of the new rarity math.
-
-6.12 Testnet → Mainnet Touchpoints
-	•	Testnet (Awakening/Zeus): Forge/Combine live; BDAG testnet marketplace for machine parts & combined shards (as testnet NFTs). Optional Rarible pre-TGE mints (Mode A).
-	•	TGE / Mainnet: Conversion event → eligible combined shards become mainnet mint tickets → full NFT mints. Optional ETH mirrors on Rarible for visibility/liquidity.
-	•	Awards: Testnet seasons may grant Award NFTs (time-locked or with OCW active only during a named mainnet season).
-
-6.13 Deliverables (Phase 2)
-	1	Design spec v2 (this section)
-	2	Trait Matrix v2 table (weights, examples, baseline caps → OCW rules)
-	3	Mounted NFTs one-pager (caps, OCW, stacking, cooldowns, leaderboard modes)
-	4	Metadata map (core + mutation + awards fields, palette tokens, example JSONs)
-	5	Marketplace flow (inventory vs tradables, Mode A/B toggles)
-	6	Mutation & Luck brief (numbers, pity meter, stabilize rules, auditability)
-	7	Awards brief (edition policy, OCW governance, season decay, lock/transfer rules) 
-Visual & Thematic Direction
-Clean BDAG-style design language: metallic gradients, luminescent edges, and animated particle loops for higher rarities. Even Raw-tier shards look collectible and “real.”
-
-
-7. PHASE 3 – ZEUS EXPANSION (TESTNET–MAINNET BRIDGE, DAO, POOLS)
-7.1 Purpose
-Phase 3 (“Zeus”) formalises the transition from a purely testnet experience to a chain-aware game economy, introducing the community governance layer (DAO), optional community mining pool integration for test access, and staged bridge functionality to external marketplaces. It prepares the player base and content pipeline for mainnet while keeping the gameplay accessible and fair.
-7.2 Systems Added in Zeus
-	•	DAO voting and parameter governance (seasonal/quarterly cadence).
-	•	Community mining pool integration (testnet-facing, uptime rewards for operators).
-	•	Bridge UX pathways (scoped to the two scenarios defined earlier, reflected below).
-	•	Season/Epoch structure for timed content, leaderboards, and reward snapshots.
-	•	Beta tester and bug bounty tiers with medals/insignias and small in-game perks.
-	•	Compliance/guardrail enforcement: utility-first, no yield expectation. 
-7.3 Bridge Scenarios (Mode Config)
-7.3.1 Mode B — BDAG-First (Classic Testnet → Mainnet)
-	•	Testnet (Awakening / Zeus):
-	◦	Players forge & combine in-game.
-	◦	Tradables: machine parts and combined shards list on the BDAG in-game marketplace as testnet NFTs.
-	◦	No full collectible mints yet; inventory holds ore and single shards.
-	•	TGE / Mainnet (“The Great Launch”):
-	◦	Conversion Event: eligible combined shards receive mainnet mint tickets → players mint full NFTs on BDAG.
-	◦	Launch Day NFT is issued as the first live on-chain collectible (event-tagged; origin_phase updates).
-	◦	Optional ETH mirrors on Rarible open after BDAG mint; wBDAG supported for alignment.
-	•	Post-TGE:
-	◦	Ongoing play continues to feed BDAG mints first, with optional Rarible mirrors for visibility/liquidity.
-	◦	Bridge fees remain small; Season Pass may discount conversion/mirror actions.
-	◦	Compliance: utility-first framing, no yield language.
-7.3.2 Mode A — Rarible-First (Pre-TGE Minting Window)
-	•	Testnet (Awakening / Zeus):
-	◦	Same gameplay loop and BDAG testnet marketplace for machine parts and combined shards.
-	◦	Additionally, enable full collectible mints to the Rarible (ETH) collection during the window (optional, curated).
-	◦	Use wBDAG where applicable for fees/utility alignment.
-	•	TGE / Mainnet Sync:
-	◦	At TGE, synchronize provenance: ETH-minted mirrors are burned/unlocked or claimed to anchor BDAG originals for full in-game utility (one canonical origin).
-	◦	Metadata retains origin_phase and event_tag; mirrors can be reopened post-anchor if configured.
-	•	Post-TGE:
-	◦	New mints may occur on BDAG first with optional ETH mirrors, or continue dual-mint per edition policy.
-	◦	Bridge fees small; Season Pass discounts apply.
-	◦	Compliance: utility-first positioning, no yield language; edition caps disclosed on Rarible.
-Common to both modes:
-	•	BDAG in-game marketplace is always live (testnet → mainnet) for machine parts & combined shards.
-	•	Inventory rules unchanged (ore + single shards stay off-market).
-	•	Award NFTs and event drops can be scheduled in either mode; when active, their edition caps and any OCW (overcap window) are disclosed.
-	•	Competitive integrity: Core leaderboards normalize perks; Open leaderboards reflect full loadouts.
-
-7.4 Rarible Strategy and Legacy OKX Integration
-	•	ETH storefront as reach layer; BDAG as fast utility layer.
-	•	Royalties mirrored; single verified collection with sub-drops per season.
-	•	Legacy OKX “BlockDAG Diamond” Collection (250 NFTs):
-	◦	Recognised via wallet-link badge.
-	◦	Utility: small, cosmetic-forward insignias and minor perks (e.g., +1–2 % forge speed or +1 inventory slot) without creating pay-to-win dynamics.
-	◦	Visual: insignias/badges mount to Medal Cabinet; optional craft skin overlays.
-7.5 Community Mining Pool Integration (Test Access)
-	•	Community pool endpoints (NowNodes-compatible if needed) used for read-only status and uptime stats; rewards translated to tiny Energy Credit multipliers or unique cosmetic badges.
-	•	Pool Operator incentives: uptime >98 % → +2 % Energy Credit boost for linked accounts (capped; expires each epoch).
-	•	Anti-abuse: per-account rate limits; DAO-season resets; no direct token yield from pools inside the game.
-7.6 DAO Governance and Parameters
-	•	Voting Surface: reward curve slope, daily caps, storage expansion limits, seasonal themes, bridge fee discounts.
-	•	Eligibility: Legendary/event NFTs and selected DAO-flagged items; one-account-one-vote weighting (no token yield).
-	•	Controls: on-chain parameters with community multisig emergency pause (fraud/MEV anomalies).
-	•	Transparency: public logs; proposal incentives via SBT/NFT badges (no monetary reward).
-	•	DAO can authorise Award NFT editions and set OCW (overcap window) values/timeboxes.
-7.7 Beta Testers & Bug Bounties — Non-Tradable Medals (SBTs)
-	•	Format: Soulbound medals (SBTs) only; not NFTs; not part of Award NFTs.
-	•	Tiers: Pathfinder, Vanguard, Frontier Council (access levels and responsibilities).
-	•	Display: Lives in Medal Cabinet → Achievements; cannot be listed, sold, or transferred.
-	•	Mounting: Not mountable; provides no functional perks, no OCW, and does not affect leaderboards.
-	•	Utility: May unlock QA channels, early build flags, or test server access (non-economic).
-	•	Compliance: Utility-first recognition; zero yield language.
-
-7.8 Live Ops — Seasons, Events & Drops
-	•	Event Toggles: Live Ops can increase cosmetic mutation bias (e.g., +3% finish shifts) and schedule limited Award NFT drops.
-	•	Award NFTs: Edition-capped, fully disclosed; any OCW (cap-breaker) value and expiry are shown on the card and metadata.
-	•	Provenance: Each event stamps origin_phase and event_tag for collectibles and filters.
-	•	Leaderboards: Two modes — Open (perks + any OCW apply) and Core (normalized to baseline caps; no OCW).
-	•	Economy Hooks: Stabilize tokens and catalysts may be event-earnable (never sold), with drop rates published.
-	•	Mode Compatibility: Works in Mode A (Rarible-first) and Mode B (BDAG-first); BDAG in-game marketplace remains active for parts/combined shards throughout.
-
-7.9 Compliance and Anti-Abuse
-	•	No yield promises; utility and cosmetic prestige only.
-	•	Proof-of-Play oracles and anomaly detection limit botting.
-	•	Bridge proof randomization to reduce MEV risk.
-7.10 Deliverables for Phase 3 (Zeus)
-	1	DAO parameter contracts and Snapshot/runner integration.
-	2	Community pool status adapters (read-only) and reward hooks.
-	3	Bridge UX v1 with Scenario 12a/12b toggles.
-	4	Live Ops schedule and season content pipeline.
-	5	Governance docs and player-facing transparency pages.
-
-
-8. PHASE 4 – HOVER MINER EXPANSION (POE/POW INTEGRATION, GUNNER)
-8.1 Purpose
-Phase 4 evolves ground gameplay into atmospheric flight with the Hover Miner and introduces the light, ethical “Gunner” precision tool for debris clearing, particle collection, and skill missions. It keeps sessions short, mobile-friendly, and visually elevated while tying into BDAG identity.
-8.2 Vehicle Concept – HVR-1 Pioneer (to HVR-5 Zenith)
-	•	Lift Array: magnetic stabilisers for smooth gliding and inertia steering.
-	•	Ore Scoop: airborne vacuum harvester for surface minerals.
-	•	Drill Lance: burst energy drill for vertical seams/cliffs.
-	•	Energy Core: BDAG reactor; warm amber glow and audio pulse.
-	•	Shield Canopy: protective plasma layer; flicker feedback under impact.
-	•	Visible upgrade path:
-	◦	HVR-1 Pioneer (base) → HVR-2 Scout (boost) → HVR-3 Vanguard (speed) → HVR-4 Tempest (storm access/DAO events) → HVR-5 Zenith (space preview skin).
-8.3 Core Loop (5–7 Minutes)
-	1	Launch from base (short lift sequence; HUD on).
-	2	Scan pulse reveals mineral/ion nodes.
-	3	Harvest with Scoop or Drill; optional Gunner precision tasks.
-	4	Return to base; refine to shards; apply upgrades.
-	5	Repeat; rotate missions daily and align event content with Zeus Live Ops.
-8.4 Mission Types
-	•	Survey Flight: scan for new veins (3–4 min).
-	•	Ion Tempest: survive light storm; chance for Rare shards (4–6 min).
-	•	Courier Run: short deliveries between outposts (2–3 min).
-	•	Resonance Hunt: chase signal anomalies for lore items (4–5 min).
-	•	Ethical framing maintained: no organic targets.
-8.5 Gunner Module – Precision Beam Array
-	•	Function: short-burst energy beam for debris clearing and particle ionization.
-	•	Controls: tap to aim, hold to charge, release to fire; recharge meter.
-	•	Miss Penalty: minor cosmetic scorch only; no heavy damage model.
-	•	Upgrades: Pulse Coil (faster recharge), Refract Array (beam split), Stabiliser Field (assist), Plasma Mod (range).
-	•	Missions: Debris Sweep, Particle Run, Calibration Trial, Storm Shield.
-8.6 Upgrades and Progression
-	•	HVR tier unlocks by ore/shard milestones and mission clears.
-	•	Visual changes for pride-of-ownership; reactor/fin effects scale by tier.
-	•	Ties back to Forge (shards reduce build time, consistent with earlier rule: higher-grade ore → lower craft time).
-8.7 Integration with Existing Systems
-	•	Forge/Workshop: Gunner upgrades occupy an armament slot; Drone Dock can auto-collect charged ore during missions.
-	•	Ore Silo Extensions: new “ion dust” resource from Particle Runs.
-	•	Base UI: Hover Bay appears as a new room; consistent with the established dash scheme.
-8.8 Economy & Hardware Hooks (Single-Unit Placeholder)
-	•	X1 (POE) link → unlocks Auto-Dock quality-of-life feature.
-	•	X10 (POE hardware) link → ambient base skin or small Energy recharge QoL.
-	•	X30 (ASIC) link → storm radar hint UI (+2 % energy yield reading).
-	•	X100 (ASIC) link → prestige glow + “Prime Flight” audio theme. Note: For this phase plan, assume a cap of one unit per class per user to keep balance while we finalise the broader curve/cap policy in the separate Ecosystem–Mining Economy Addendum v0.1. That addendum covers multi-unit scaling, fairness levers, and DAO governance over curves.
-8.9 Leaderboards and DAO
-	•	Distance Leaderboard: flight skill metric.
-	•	Efficiency Leaderboard: average yield per mission minute.
-	•	DAO Events: players vote on next unlock zone or storm intensity variants; badges display on HUD.
-8.10 Visual and Audio Direction
-	•	Daylight desert palette; amber dust trails; subtle teal plasma.
-	•	Engine hum layered with ambient wind; louder cues for mining/firing.
-	•	Minimal HUD: altitude, energy bar, radar pulse, timer; angular canopy frame (more straight seams than round for cockpit visuals, per aesthetic direction).
-	•	Open (perks + OCW apply) and Core (normalized to baseline caps; no OCW).
-	•	Seasonal events may drop Award NFTs; mounted loadouts affect Speed/Control/Efficiency within caps/OCW.
-8.11 Deliverables for Phase 4
-	1	Text document – Hover Miner v1.0 plain.
-	2	Render prompts – cockpit, storm flight, Gunner Bay, base Hover hangar.
-	3	Flow diagram – Launch → Scan → Harvest/Fire → Refine → Upgrade.
-	4	Economy note – ASIC scaling marked “pending Addendum” for multi-unit policies.
-
-
-9. COMMUNITY SYSTEMS – DAO, BETA PROGRAMS, REWARDS
-9.1 Purpose
-To embed the player base directly into the project’s development and governance, creating an interactive culture around BDAG’s ecosystem.
-9.2 DAO Structure
-	•	Governance through on-chain proposals and community voting.
-	•	Eligibility tied to specific Legendary/DAO-flag NFTs.
-	•	No yield; votes concern balancing, season themes, feature priorities, and community-fund allocations.
-	•	Community-multi-sig guardian for safety controls and fraud pauses.
-	•	DAO manages Award NFT edition approvals, OCW ceilings (global +3%), and season decay rules.
-9.3 Beta Testing and Feedback
-Three tiers as established during Zeus: Pathfinder, Vanguard, Frontier Council. All receive non-transferable SBT medals, lifetime profile badges, and minor utility perks. Feedback routes directly into DAO backlog for visibility.
-9.4 Bug Bounties and Recognition
-Non-monetary, non-transferable Debug Protocol emblems; awarded to players discovering critical issues. Displayed in Medal Cabinet and DAO records for transparency.
-9.5 Seasonal Events and Creator Co-Creation
-Quarterly Launch Epochs introduce new shard archetypes, world zones, and limited NFT drops. Top builders and artists submit blueprints vetted via DAO poll for curated Rarible releases. Royalties mirrored 40 % dev fund / 40 % season pool / 20 % DAO. Some events culminate in Award NFTs (Achievement/Team/DAO classes) with explicit edition sizes.
-
-
-10. PHASE 5 – TGE AND MAINNET TRANSITION
-10.1 The Great Launch Event
-An in-game global event mirroring BDAG’s TGE. Planet DAG-9 destabilises; players gather “launch fuel.” Completion unlocks spaceflight capability and mints a Launch Day NFT – the first live on-chain item using real BDAG tokens. Conversion event finalises testnet items → mainnet eligibility; first mainnet Award NFTs may debut.
-10.2 Bridge Mechanics — Mode-Aware Mirroring
-	•	Single canonical origin: BDAG is the source of truth for in-game utility; ETH (Rarible) acts as a visibility/liquidity mirror per mode.
-	•	Mode B (BDAG-first): Testnet trades parts/combined shards; at TGE, run the Conversion Event → eligible combined shards receive mainnet mint tickets → mint on BDAG → optionally open ETH mirrors on Rarible.
-	•	Mode A (Rarible-first): During Awakening/Zeus, allow curated full mints to Rarible (ETH); at TGE, anchor or claim those items to BDAG originals (burn/unlock or claim flow) so in-game utility lives on BDAG; mirrors can remain available post-anchor.
-	•	Inventory rules unchanged: ore & single shards stay off-market; parts/combined shards use the BDAG in-game marketplace (testnet → mainnet).
-	•	Mirroring direction: BDAG ⇄ ETH mirrors preserve provenance and token continuity; metadata stays schema-agnostic but aligned across chains.
-
-10.3 Fees & Discounts
-	•	Small, transparent fees apply to mint, mirror/bridge, and conversion actions (values defined per season).
-	•	Season Pass may provide discounts on conversion and mirror actions.
-	•	Optional conversion incentive: a reduced fee (or fee holiday window) for first-wave TGE conversions to encourage timely anchoring.
-	•	wBDAG support where applicable for ETH-side actions; fees are always utility-framed (no yield language).
-
-10.4 Cross-Chain Visibility & Metadata Consistency
-	•	Rarible (ETH) serves as the public storefront when enabled; BDAG items mirror with clear links to the BDAG original.
-	•	Metadata parity: mirrors must carry the same core fields for clarity and filters: rarity, functions{primary,secondary}, finish, origin_phase, event_tag, family_tag(optional), display_color, provenance_note(optional), mutation_flag(optional), mutation_note(optional) Award fields mirrored in full: award_class, award_source, edition_size, ocw{bucket,value_pct,expires_at}, award_lock(optional), team_id(optional)
-	•	Disclosure: edition caps, any OCW (cap-breaker) value, and expiries are visibly disclosed on both chains.
-	•	Leaderboards & integrity: on-chain mirrors don’t affect Core leaderboards (normalized to baseline caps); Openladders reflect full loadouts and any OCW as designed.
-
-
-11. ECOSYSTEM INTEGRATION AND RARIBLE STRATEGY
-11.1 Mode Toggle (A/B)
-	•	Mode A — Rarible-first (optional pre-TGE): Curated full collectible mints can open on Rarible (ETH) during Awakening/Zeus. BDAG remains the gameplay origin; items are anchored/claimed to BDAG at TGE for in-game utility.
-	•	Mode B — BDAG-first (default): All activity stays BDAG testnet → BDAG mainnet until TGE. After mainnet mints, optional ETH mirrors may be enabled on Rarible for visibility/liquidity.
-	•	The BDAG in-game marketplace is always active (testnet → mainnet) for machine parts & combined shards; ore & single shards stay inventory-bound.
-11.2 Public Storefront
-	•	When enabled (Mode A or post-TGE in Mode B), Rarible (ETH) serves as the public storefront for the Shard Frontier collection.
-	•	wBDAG may be supported for ETH-side actions/fees; provenance always links back to the BDAG original as the canonical source of in-game utility.
-11.3 Mirrors & Metadata
-	•	Mirroring: BDAG ⇄ ETH mirrors preserve token continuity and provenance; BDAG remains the canonical origin for gameplay.
-	•	Metadata parity (schema-agnostic): mirrors must display the same core fields for clarity and filters (rarity, functions, finish, origin_phase, event_tag, family_tag, display_color, provenance_note, and any mutation fields).
-	•	Awards on Rarible: Award NFT editions are mirrored with full disclosure (see §11.4).
-11.4 Award NFTs — Disclosure & Trust
-	•	On-page edition caps: each Award NFT displays its edition size (e.g., /25, /100).
-	•	OCW (cap-breaker) disclosure: card and metadata clearly show the bucket, value (%), and any expiry.
-	•	Provenance badges: visible origin_phase and event_tag indicators; award_source (e.g., DAO Vote, Season Leaderboard) shown on card.
-	•	Transfer policy: edition-specific (tradable by default; optional time-lock or non-transferable for SBT-style honors).
-11.5 Legacy Integration (OKX)
-	•	Wallets holding OKX “BlockDAG Diamond” NFTs receive an in-game legacy badge/skin (cosmetic/QoL only). These items are not part of the new rarity or OCW systems.
-11.6 Compliance
-	•	Utility-first positioning across all listings; no yield language. Edition caps, OCW, and provenance are clearly disclosed on both BDAG and Rarible.
-Rarible becomes the “window out” for BDAG culture — a cross-chain display of its design language and innovation ethos.
-
-
-12. POST-TGE EXPANSION AND FUTURE WORLDS
-12.1 Off-World Exploration (Unchanged Scope) After TGE, spaceflight opens to asteroid belts and partner-chain worlds. Each world represents a connected ecosystem; BDAG remains the canonical origin for gameplay items with optional ETH mirrors for visibility. Cross-chain missions continue to use BDAG as the universal link currency.
-12.2 Seasonal Arcs (Event Cadence & Award Planning)
-	•	Cadence: Seasons run on a predictable rhythm (e.g., 8–12 weeks). Each season publishes a theme, rotating event_tag labels (e.g., Ion Tempest, Canyon Run Cup, Launch Anniversary), and a clear schedule of limited-time activities.
-	•	Disclosure up front: For every season, announce Award NFT plans before kickoff, including edition sizes (e.g., /25, /100), eligibility criteria (leaderboard ranks, milestone clears, DAO votes), and any OCW (cap-breaker) values and expiry windows.
-	•	Mutation tuning: Seasonal events may temporarily increase cosmetic mutation bias (e.g., +3% finish shifts) while keeping power within baseline caps unless OCW is explicitly announced for an Award edition.
-	•	Provenance: All drops and mints carry origin_phase = “Mainnet S#” and the active event_tag for filtering, collecting, and long-term narrative continuity.
-12.3 New Gameplay Modules (Post-Mainnet) Modular expansions (Drone Bay, Faction Contracts, cross-chain tournaments) roll out post-TGE without changing the core pipeline (Collect → Forge → Combine → Mint).
-	•	Faction Tournaments: Competitive seasons may grant Team Award NFTs to top squads. These are edition-capped, show award_source (e.g., Faction Finals S2), and may include a team_id in metadata. Any OCW granted follows the global policy (one Award mounted max, OCW fully disclosed, Core leaderboards normalized).
-	•	Creator Co-Creation: DAO-curated blueprints can become seasonal drops (non-Award or Award editions), with edition sizes and transfer rules announced in advance.
-	•	Loadout Compatibility: Mounted NFT rules, caps, and OCW policy remain consistent across new modules; Open vs Core leaderboard modes apply to new competitive surfaces by default.
-
-
-13. PROJECT FOLDER AND DEVELOPMENT WORKFLOW SUMMARY
-13.1 Studio Folder Structure (Google Drive)
-1 – Renders 2 – Prompts 3 – Documents 4 – Audio 5 – Video Prompts 6 – Research 7 – Assets  8 – Project Snapshots 9 – Post meeting Revisions 10 – Development Phase 2
-13.2 Workflow Stages
-1 – Concept Design → Lore and Mechanics drafts. 2 – Prototype → No-code mock dApp build for presentation. 3 – Alpha → Testnet integration and DAO activation. 4 – Launch → TGE alignment and mainnet bridge. 5 – Expansion → Live Ops and seasonal content.
-13.3 Snapshot and Version Control
-Each phase exported as plain-text and PDF deliverables. Snapshots archived under 08_Snapshots/ with timestamped folders. Addenda (technical or economic) logged in 08_Addenda/.
-
-
-14. STRATEGIC OUTCOMES, KPIs AND BRAND POSITION
-14.1 Commercial and Cultural Impact
-	•	BDAG becomes a cultural engine, not just a chain.
-	•	Mining hardware owners gain utility boosts without token emission risk.
-	•	Rarible visibility positions BDAG in the ETH collector ecosystem.
-	•	ShardTap funnel converts non-crypto gamers into wallet holders.
-	•	Seasonal content cycles ensure retention and sustained network activity.
-	•	Mode flexibility (Mode A Rarible-first / Mode B BDAG-first) lets publishing adapt without changing player UX; BDAG remains the canonical origin for in-game utility.
-	•	The BDAG in-game marketplace (testnet → mainnet) creates ongoing GMV for machine parts & combined shards, while optional ETH mirrors expand reach.
-	•	Mounted NFTs (3-slot) add meaningful, capped customization; Award NFTs add prestige with bounded OCW(cap-breaker) for special editions.
-	•	Provenance signals (origin_phase, event_tag) and controlled mutation increase collectability without power creep.
-	•	Open/Core leaderboards protect competitive integrity (normalized caps in Core).
-	•	Full disclosure of edition caps, OCW, and fees strengthens compliance and trust.
-14.2 Competitive Positioning BDAG differentiates itself from Solana and Immutable by grounding value in earned rarity and creative participationrather than mint volume or studio dependency. “Rarity earned through discovery and craft — not purchase” is the core brand statement.
-14.3 Operational KPIs
-	•	Bridge success rate ≥ 95%.
-	•	Active wallet link ≥ 60%.
-	•	Craft-to-mint ratio 8–12%.
-	•	Season volume ≥ 250K transactions.
-	•	Season Pass adoption ≥ 20%.
-	•	Mounted adoption: % of players with 1–3 NFTs mounted — ≥ 35% within 30 days of first mint eligibility.
-	•	Mutation engagement: % of combines resulting in mutation — 6–10%.
-	•	Award fulfilment: Award NFT claim completion — ≥ 90% of eligible.
-	•	Open vs Core participation ratio: healthy split (e.g., 60/40 ± by season).
-	•	Testnet → Mainnet conversion rate for eligible combined shards at TGE — ≥ 70% within window.
-	•	Marketplace GMV (parts/combined shards) per season — season-over-season growth.
-	•	Unique visual variants minted per season (finishes + cosmetic shifts) — meets/exceeds planned floor.
-	•	Award disclosure compliance: % of Award listings with full OCW (bucket/value/expiry) on both chains — 100%.
-	•	Retention uplift: D30 retention for players who mounted ≥1 NFT vs non-mounters — +10–15%.
-	•	Mirror uptake (when enabled): % of BDAG mints mirrored to Rarible within season — ≥ 30%.
-14.4 Summary Outcome By binding its gameplay loop to real network progress, Shard Frontier functions as a launch vehicle for the BlockDAG ecosystem — a self-sustaining bridge between technology, community, and culture.
