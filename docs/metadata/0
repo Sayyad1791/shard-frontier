@@ -1,0 +1,15 @@
+{
+  "name": "Shard #0",
+  "description": "A prototype shard from the early Awakening tests. First calibration piece for Shard Frontier.",
+  "image": "0.png",
+  "attributes": [
+    { "trait_type": "rarity", "value": "Raw" },
+    { "trait_type": "functions.primary", "value": "Efficiency" },
+    { "trait_type": "functions.secondary", "value": "Capacity" },
+    { "trait_type": "finish", "value": "matte amber" },
+    { "trait_type": "family_tag", "value": "Solar" },
+    { "trait_type": "origin_phase", "value": "Awakening" },
+    { "trait_type": "event_tag", "value": "Launch Week" },
+    { "trait_type": "display_color", "value": "amber" }
+  ]
+}

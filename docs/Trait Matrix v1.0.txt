@@ -1,0 +1,120 @@
+Trait Matrix v1.0 (Plain Text)
+Purpose
+Define the rarity, evolution, and utility framework for Shard Frontier NFTs and shards. This matrix governs how in-game resources evolve into blockchain assets and how each rarity tier supports long-term engagement and market value.
+
+Trait Structure Overview
+Every collectible or NFT in Shard Frontier is built from a combination of:
+	•	Material Traits (the ores and shards used)
+	•	Functional Traits (speed, efficiency, power)
+	•	Visual Traits (colour, texture, pattern, holographic effects)
+	•	Lore Traits (origin story or event badge)
+Each trait contributes to rarity, appearance, and potential perks.
+
+Core Rarity Tiers
+Tier
+Source
+Description
+Utility
+Raw
+Common ore
+Abundant and low-yield materials; short-term use
+Basic upgrades
+Refined
+Processed ore
+Mid-tier crafting input
+Unlocks mid-level tools
+Rare
+Deep-zone anomalies
+Difficult to obtain; unique visual patterns
+Enhanced gameplay bonuses
+Legendary
+Event or DAO drops
+Extremely limited, story-tied items
+Highest visual/lore value, tradable NFT tier
+
+Trait Categories
+Category
+Examples
+Description
+Material
+Ferrite Dust, BDAG Quartz, Ion Crystal
+Determines colour palette and particle effects
+Energy
+Reactor Core, Flux Cell
+Defines animation intensity and glow strength
+Structural
+Alloy Frame, Nano Mesh
+Controls shape variance and durability
+Cognitive
+AI Imprint, Memory Core
+Adds lore hooks and narrative metadata
+Each crafted item draws randomly (weighted) from these categories to maintain uniqueness.
+
+Trait Evolution (Fusion System)
+	1	Collect Shards – obtained from mining or missions.
+	2	Combine – fuse two or more shards in the Forge to create an evolved shard.
+	3	Refine – use Energy Credits to stabilise the fusion; chance of mutation.
+	4	Mint – once stabilised, mint the NFT (on BDAG or bridged chain).
+Mutation adds a random bonus trait (colour shift, glow pattern, small stat buff). Higher rarity shards have increased mutation chance.
+
+Trait Weighting
+Rarity
+Base Probability
+Mutation Chance
+NFT Output
+Raw
+60 %
+2 %
+Common item
+Refined
+25 %
+5 %
+Uncommon
+Rare
+10 %
+10 %
+Rare
+Legendary
+5 %
+20 %
+Unique 1/1 NFT
+Weighting ensures longevity — players always have common finds but still chase high-rarity outcomes.
+
+NFT Integration
+	•	Minted NFTs inherit trait metadata directly from the shard combination.
+	•	Metadata schema follows ERC-1155/721 hybrid standard.
+	•	Rarity and fusion history visible on both BDAG explorer and Rarible storefront.
+	•	Legendary and event NFTs include immutable “Creation Lore” lines (who forged it, during what event, DAO season, etc.).
+
+Perk Examples by Trait Type
+Trait
+Example Perk
+Material – Ion Crystal
++3 % mining speed
+Energy – Flux Cell
++5 % reactor duration
+Structural – Nano Mesh
++2 % hull integrity
+Cognitive – Memory Core
+Unlocks lore mission or hidden dialogue
+
+Trait Families (Future Expansion)
+	1	Solar Lineage – warm gold/amber tones; linked to energy efficiency.
+	2	Quantum Lineage – blue/purple tones; boosts hover systems.
+	3	Void Lineage – dark metallics; linked to DAO governance perks.
+	4	Genesis Lineage – event-only, animated; visual prestige, no stat gain.
+These families let future seasons add depth without breaking the existing economy.
+
+Anti-Duplication & Rarity Assurance
+	•	Each NFT stores a fusion hash derived from shard IDs to prevent duplicates.
+	•	The system checks for identical trait combos before minting.
+	•	DAO auditors can review randomness seed generators for transparency.
+
+Visual & Thematic Direction
+Clean BDAG-style design language: metallic gradients, luminescent edges, and animated particle loops for higher rarities. Even Raw-tier shards look collectible and “real.”
+
+Deliverables for This Phase
+	1	PDF – Trait Matrix v1.0
+	2	Metadata Schema Draft (JSON template)
+	3	Rarity Weight Table for future seasons
+	4	Render Prompts – Shard variants (Raw → Legendary progression)

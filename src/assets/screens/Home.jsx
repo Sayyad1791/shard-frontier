@@ -35,11 +35,10 @@ const Home = () => {
       }}
     >
       <div
+        className="sf-canvas"
         style={{
           position: 'relative',
-          // 9:16 portrait canvas sized from viewport width for mobile: edges touch left/right
-          width: '100vw',
-          height: 'calc(100vw * (16/9))',
+          // 9:16 portrait canvas, responsive: use 90% of viewport for strong presence while fitting on desktop
         }}
       >
         <img
@@ -221,6 +220,7 @@ const Home = () => {
               { label: 'LEADERBOARDS', onClick: () => {} },
               { label: 'GAME INSTRUCTIONS', onClick: () => {} },
               { label: 'SETTINGS', onClick: () => {} },
+              { label: 'DEV INVENTORY', onClick: () => navigate('/inventory') },
               { label: 'EXIT', onClick: () => navigate('/') },
             ].map((item, idx) => {
               const isHover = hovered === idx
@@ -246,13 +246,14 @@ const Home = () => {
                     color,
                     textTransform: 'uppercase',
                     fontWeight: 900,
-                    letterSpacing: '0.1em',
-                    fontSize: item.label === 'GAME INSTRUCTIONS' 
-                      ? 'clamp(12px, 2.2vh, 18px)'  
-                      : isStart 
-                        ? 'clamp(16px, 3vh, 24px)' 
-                        : 'clamp(14px, 2.6vh, 21px)',
-                    whiteSpace: 'normal',
+                    letterSpacing: '0.09em',
+                    fontSize:
+                      item.label === 'GAME INSTRUCTIONS'
+                        ? 'clamp(11px, 2vh, 16px)'
+                        : isStart
+                          ? 'clamp(16px, 2.8vh, 22px)'
+                          : 'clamp(13px, 2.3vh, 19px)',
+                    whiteSpace: 'nowrap',
                     textShadow: glow,
                     display: 'flex',
                     alignItems: 'center',

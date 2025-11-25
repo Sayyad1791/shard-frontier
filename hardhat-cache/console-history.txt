@@ -1,0 +1,167 @@
+await shard.ownerOf(1);
+// Confirm
+await tx.wait();
+tx.hash
+const tx = await shard.transferFrom(deployer.address, to, 1);
+const to = '0x49FDd1012499793DF3B48eb6A0A129a1E8a398A6';
+// Transfer token 1 to the other wallet
+const shard = await ethers.getContractAt('ShardNFT', CONTRACT_ADDRESS, deployer);
+deployer.address  // should be 0x1df0...
+const [deployer] = await ethers.getSigners();
+const CONTRACT_ADDRESS = '0x0F2F6F22Aa68b11295e2FbEb07416c8910481c11';
+await shard.ownerOf(1);
+// Who owns token 1?
+const shard = await ethers.getContractAt('ShardNFT', CONTRACT_ADDRESS);
+const CONTRACT_ADDRESS = '0x0F2F6F22Aa68b11295e2FbEb07416c8910481c11';
+.exit
+await shard.tokenURI(0);
+await tx.wait();
+tx.hash
+const shard = await ethers.getContractAt('ShardNFT', CONTRACT_ADDRESS, signer);
+signer.address
+const [signer] = await ethers.getSigners();
+const BASE_TOKEN_URI = 'ipfs://QmeBVjnof8riwwDfSRAE2eCGXxnGMBXJ8ofkR8Q4Djrcqg/json/';
+const CONTRACT_ADDRESS = '0x0F2F6F22Aa68b11295e2FbEb07416c8910481c11';
+console.log("Your NFT balance:", (await shardNFT.balanceOf(signer.address)).toString());
+console.log("Transaction confirmed in block:", receipt.blockNumber);
+const receipt = await mintTx.wait();
+console.log("Waiting for confirmation...");
+console.log("Transaction hash:", mintTx.hash);
+const mintTx = await shardNFT.mint(signer.address, { value: ethers.parseEther("5") });
+console.log("Minting NFT...");
+// Mint NFT
+console.log("Your BDAG balance:", ethers.formatEther(await ethers.provider.getBalance(signer.address)), "BDAG");
+console.log("Your address:", signer.address);
+const [signer] = await ethers.getSigners();
+// Get signer
+const shardNFT = await ShardNFT.attach("0x9F97E3b1A70b2932e75973bbcf8A973b77b16ae0");
+const ShardNFT = await ethers.getContractFactory("ShardNFT");
+// Get contract instance
+.exit
+console.log("Your NFT balance:", (await shardNFT.balanceOf(signer.address)).toString());
+// Check your NFT balance
+console.log("Transaction hash:", mintTx.hash);
+});  value: ethers.parseEther("5") const mintTx = await shardNFT.mint(signer.address, { 
+// Mint an NFT to your own address
+console.log("Transaction hash:", mintTx.hash);
+});  value: ethers.parseEther("5") const mintTx = await shardNFT.mint(signer.address, { 
+// Mint an NFT to your own address
+console.log("Your address:", signer.address);
+const [signer] = await ethers.getSigners();
+// Get your wallet address
+console.log("Mint function signature:", mintFragment.format("sighash"));
+const mintFragment = ShardNFT.interface.getFunction("mint");
+// Or check the mint function signature
+console.log(JSON.stringify(contractArtifact.abi, null, 2));
+const contractArtifact = await hre.artifacts.readArtifact("ShardNFT");
+// Get the contract ABI
+console.log("Your NFT balance:", (await shardNFT.balanceOf(signer.address)).toString());
+console.log("Transaction confirmed in block:", receipt.blockNumber);
+const receipt = await mintTx.wait();
+console.log("Transaction hash:", mintTx.hash);
+});  value: ethers.parseEther("5") const mintTx = await shardNFT.mint({ 
+// Mint an NFT (costs 5 BDAG)
+console.log("Your BDAG balance:", ethers.formatEther(balance), "BDAG");
+const balance = await ethers.provider.getBalance(signer.address);
+console.log("Your balance:", (await shardNFT.balanceOf(signer.address)).toString());
+const [signer] = await ethers.getSigners();
+// Check your NFT balance
+console.log("NFT minted!");
+await tx.wait();
+const tx = await shardNFT.mint({ value: ethers.parseEther("5") });
+// Mint an NFT (costs 5 BDAG)
+const shardNFT = await ShardNFT.attach("0x9F97E3b1A70b2932e75973bbcf8A973b77b16ae0");
+const ShardNFT = await ethers.getContractFactory("ShardNFT");
+// Attach to the deployed contract
+console.log("Owner:", await shardNFT.owner());
+console.log("Symbol:", await shardNFT.symbol());
+console.log("Name:", await shardNFT.name());
+const shardNFT = await ShardNFT.attach("0x9F97E3b1A70b2932e75973bbcf8A973b77b16ae0");// Check contract details
+const ShardNFT = await ethers.getContractFactory("ShardNFT");
+// Attach to the deployed contract
+.exit
+console.log("Funds withdrawn");
+await withdrawTx.wait();
+const withdrawTx = await shardNFT.withdraw();
+console.log("Contract balance (BDAG):", ethers.formatEther(balance));
+const balance = await ethers.provider.getBalance(shardNFT.target);
+await shardNFT.tokenURI(0);
+await shardNFT.ownerOf(0);
+console.log("Transaction was mined in block:", receipt.blockNumber);
+const receipt = await mintTx.wait();
+console.log("Transaction hash:", mintTx.hash);
+const mintTx = await shardNFT.mint("0x1df0b09953142c998cdcbca425ff6be0fc463e63", { value: ethers.parseEther("5.0") });
+console.log("Signer address:", signer.address);
+const [signer] = await ethers.getSigners();
+await shardNFT.symbol();
+await shardNFT.name();
+const shardNFT = await ShardNFT.attach("0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512");
+const ShardNFT = await ethers.getContractFactory("ShardNFT");
+.exit
+console.log("Bytecode length:", code.length);
+const code = await ethers.provider.getCode("0x5FbDB2315678afecb367f032d93F642f64180aa3");
+await shardNFT.name();
+const shardNFT = await ShardNFT.attach("0x5FbDB2315678afecb367f032d93F642f64180aa3");
+const ShardNFT = await ethers.getContractFactory("ShardNFT");
+.exit
+const ShardNFT = await ethers.getContractFactory("ShardNFT");
+const ShardNFT = await ethers.getContractFactory("ShardNFT");const ShardNFT = await ethers.getContractFactory("ShardNFT");
+console.log("Token URI:", await shardNFT.tokenURI(tokenId));// 1. Get the contract factory
+// 7. Check token URI
+console.log("Owner of token", tokenId, ":", await shardNFT.ownerOf(tokenId));
+const tokenId = 0; // First token ID
+// 6. Check token owner
+console.log("NFT minted!");
+await mintTx.wait();
+});  value: ethers.parseEther("5.0")const mintTx = await shardNFT.mint(signer.address, {
+console.log("Minting NFT...");
+// 5. Mint an NFT (sending 5 BDAG)
+console.log("Using signer:", signer.address);
+const [signer] = await ethers.getSigners();
+// 4. Get the first signer
+console.log("Owner:", await shardNFT.owner());
+console.log("Symbol:", await shardNFT.symbol());
+console.log("Name:", await shardNFT.name());
+// 3. Check contract details
+const shardNFT = await ShardNFT.attach("0x5FbDB2315678afecb367f032d93F642f64180aa3");
+// 2. Attach to the deployed contract (use the address from your deployment)
+const ShardNFT = await ethers.getContractFactory("ShardNFT");
+// 1. Get the contract factory
+.exit
+// 6. Check token URI
+console.log("Owner of token", tokenId, ":", await shardNFT.ownerOf(tokenId));
+const tokenId = 0; // First token ID
+// 5. Check token owner
+console.log("NFT minted!");
+await mintTx.wait();
+});  value: ethers.parseEther("5.0") // 5 BDAGconst mintTx = await shardNFT.mint(signer.address, {
+console.log("Minting NFT to:", signer.address);
+const [signer] = await ethers.getSigners();
+// 4. Mint an NFT (sending 5 BDAG)
+console.log("Owner:", await shardNFT.owner());
+console.log("Symbol:", await shardNFT.symbol());
+console.log("Name:", await shardNFT.name());
+// 3. Get contract details
+const shardNFT = await ShardNFT.attach("YOUR_DEPLOYED_CONTRACT_ADDRESS");
+// 2. Attach to the deployed contract (replace with your contract address)
+const ShardNFT = await ethers.getContractFactory("ShardNFT");
+// 1. Get the contract factory
+.exit
+console.log("Total NFTs minted:", totalSupply.toString());
+const totalSupply = await shardNFT.totalSupply();
+console.log("Token 1 URI:", tokenURI);
+const tokenURI = await shardNFT.tokenURI(1);
+console.log("Owner of token 1:", ownerOfToken1);
+const ownerOfToken1 = await shardNFT.ownerOf(1);
+// Check owner of token ID 1
+console.log("Contract Owner:", owner);
+const owner = await shardNFT.owner();
+// Get contract owner
+console.log("Contract Symbol:", symbol);
+const symbol = await shardNFT.symbol();
+// Get contract symbol
+console.log("Contract Name:", name);
+const name = await shardNFT.name();
+// Get contract name
+const shardNFT = await ShardNFT.attach("0x5FbDB2315678afecb367f032d93F642f64180aa3");
+const ShardNFT = await ethers.getContractFactory("ShardNFT");onst ShardNFT = await ethers.getContractFactory("ShardNFT");actory("ShardNFT");

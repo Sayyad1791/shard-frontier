@@ -22,11 +22,10 @@ const Forge = () => {
       }}
     >
       <div
+        className="sf-canvas"
         style={{
           position: 'relative',
           // 9:16 portrait canvas sized from viewport width for mobile: edges touch left/right
-          width: '100vw',
-          height: 'calc(100vw * (16/9))',
         }}
       >
         <img

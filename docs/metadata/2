@@ -1,0 +1,15 @@
+{
+  "name": "Shard #2",
+  "description": "A rare calibrated shard forged from Relic-infused ore during Awakening.",
+  "image": "2.png",
+  "attributes": [
+    { "trait_type": "rarity", "value": "Rare" },
+    { "trait_type": "functions.primary", "value": "Capacity" },
+    { "trait_type": "functions.secondary", "value": "Speed" },
+    { "trait_type": "finish", "value": "crystalline (teal)" },
+    { "trait_type": "family_tag", "value": "Quantum" },
+    { "trait_type": "origin_phase", "value": "Awakening" },
+    { "trait_type": "event_tag", "value": "Launch Week" },
+    { "trait_type": "display_color", "value": "teal" }
+  ]
+}

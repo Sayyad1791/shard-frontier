@@ -22,10 +22,9 @@ const Refine = () => {
       }}
     >
       <div
+        className="sf-canvas"
         style={{
           position: 'relative',
-          width: 'min(100vw, calc(100vh * (9/16)))',
-          height: 'min(100vh, calc(100vw * (16/9)))',
         }}
       >
         <BackButton />

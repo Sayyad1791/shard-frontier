@@ -17,7 +17,8 @@ const NFTForge = () => {
   const { data: walletClient } = useWalletClient()
   const publicClient = usePublicClient()
 
-  const contractAddress = import.meta.env.VITE_NFT_CONTRACT
+  // Lock NFTForge to the same original ShardNFT contract as Inventory
+  const contractAddress = '0x0F2F6F22Aa68b11295e2FbEb07416c8910481c11'
   const chainId = Number(import.meta.env.VITE_CHAIN_ID || 1043)
   const explorerBase = import.meta.env.VITE_EXPLORER_URL || 'https://awakening.bdagscan.com'
   const mintFn = (import.meta.env.VITE_NFT_MINT_FN || 'mint').trim() // 'mint' or 'safeMint'
@@ -64,11 +65,10 @@ const NFTForge = () => {
       }}
     >
       <div
+        className="sf-canvas"
         style={{
           position: 'relative',
-          // 9:16 portrait canvas sized from viewport width for mobile: edges touch left/right
-          width: '100vw',
-          height: 'calc(100vw * (16/9))',
+          // 9:16 portrait canvas, responsive: use 90% of viewport for strong presence while fitting on desktop
         }}
       >
         <BackButton />
@@ -88,56 +88,11 @@ const NFTForge = () => {
           onLoad={() => setLoaded(true)}
         />
 
-        {/* MINT NFT control (invisible overlay over background image button) */}
+        {/* MINT NFT control (invisible overlay over background image button)
+            NOTE: disabled for competition demo to avoid on-chain errors. */}
         <button
           aria-label="Mint NFT"
-          onClick={async () => {
-            if (!isConnected) {
-              await open()
-              return
-            }
-            if (minting) return
-            if (!contractAddress) {
-              console.warn('VITE_NFT_CONTRACT is not set; cannot mint yet.')
-              setErrorMsg('NFT contract not set')
-              return
-            }
-            if (!walletClient) {
-              console.warn('Wallet client not available')
-              setErrorMsg('Wallet not ready')
-              return
-            }
-            setMinting(true)
-            setTxHash(null)
-            setErrorMsg('')
-            try {
-              let args = []
-              if (mintFn === 'safeMint') {
-                const acct = walletClient.account?.address
-                if (!acct) throw new Error('No connected account')
-                const uri = defaultTokenURI || 'ipfs://example-placeholder'
-                args = [acct, uri]
-              }
-              const value = mintValueBDAG && mintValueBDAG !== '0' ? parseEther(mintValueBDAG) : undefined
-              const hash = await walletClient.writeContract({
-                address: contractAddress,
-                abi,
-                functionName: mintFn,
-                args,
-                chain: { id: chainId },
-                value
-              })
-              setTxHash(hash)
-              await publicClient.waitForTransactionReceipt({ hash })
-              setMinted(true)
-              setTimeout(() => setMinted(false), 2500)
-            } catch (err) {
-              console.error('Mint failed', err)
-              setErrorMsg(err?.shortMessage || err?.message || 'Mint failed')
-            } finally {
-              setMinting(false)
-            }
-          }}
+          onClick={() => {}}
           style={{
             position: 'absolute',
             left: '50%',

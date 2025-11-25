@@ -16,6 +16,7 @@ import Profile from './assets/screens/Profile'
 import HoverBay from './assets/screens/HoverBay'
 import Medals from './assets/screens/Medals'
 import Map from './assets/screens/Map'
+import Inventory from './assets/screens/Inventory'
 
 
 const HomeLegacy = () => {
@@ -164,6 +165,7 @@ function App() {
         <Route path="/medals" element={<Medals />} />
         <Route path="/map" element={<Map />} />
         <Route path="/mine" element={<Mine />} />
+        <Route path="/inventory" element={<Inventory />} />
       </Routes>
     </Router>
   )
