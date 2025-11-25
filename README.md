@@ -6,7 +6,7 @@
 **Contract (ShardNFT, ERC-721):** 0x0F2F6F22Aa68b11295e2FbEb07416c8910481c11 (Awakening Testnet, Chain ID 1043)
 
 **Docs (PDFs in /docs):**
-- SHARD_PROJECT_FULL_TECHNICAL.pdf — technical overview, flows, screenshots
+- Shard Frontier — Game Design & Ecosystem Integration Plan v1.1.pdf — technical overview, flows, screenshots (Update)
 - Trait Matrix v1.0.pdf — original schema
 - Trait Matrix v1.1.pdf — current schema (supersedes 1.0)
 - Wave-2 Submission Notes.pdf — bullet summary for judges
