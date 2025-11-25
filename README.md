@@ -1,4 +1,24 @@
-# Shard Frontier
+
+## Shard Frontier — Wave-2 Submission (Awakening Testnet)
+
+**Demo:** https://shard-frontier-production.up.railway.app/home  
+**Backend Health:** https://radiant-fascination-production.up.railway.app/health  
+**Contract (ShardNFT, ERC-721):** 0x0F2F6F22Aa68b11295e2FbEb07416c8910481c11 (Awakening Testnet, Chain ID 1043)
+
+**Docs (PDFs in /docs):**
+- SHARD_PROJECT_FULL_TECHNICAL.pdf — technical overview, flows, screenshots
+- Trait Matrix v1.0.pdf — original schema
+- Trait Matrix v1.1.pdf — current schema (supersedes 1.0)
+- Wave-2 Submission Notes.pdf — bullet summary for judges
+
+**What to test:**  
+1) Connect wallet → open **/inventory** → see owned shards with **IPFS metadata + images**.  
+2) No on-chain mint buttons are exposed in the UI (scripts only for stability).  
+3) Optional: check **/health** on Railway backend and sample **/x1** endpoints.
+
+
+
+# Shard Frontier WAVE 1
 
 ## Public Prototype Demo
 
