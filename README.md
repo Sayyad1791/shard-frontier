@@ -1,7 +1,7 @@
 
 ## Shard Frontier — Wave-2 Submission (Awakening Testnet)
 
-**Demo:** https://shard-frontier-production.up.railway.app/home  
+**Demo:** https://shard-frontier-production.up.railway.app/home  (Mobile phone only)
 **Backend Health:** https://radiant-fascination-production.up.railway.app/health  
 **Contract (ShardNFT, ERC-721):** 0x0F2F6F22Aa68b11295e2FbEb07416c8910481c11 (Awakening Testnet, Chain ID 1043)
 
