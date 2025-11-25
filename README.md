@@ -1,7 +1,7 @@
 
 ## Shard Frontier — Wave-2 Submission (Awakening Testnet)
 
-**Demo:** https://shard-frontier-production.up.railway.app/home  (Mobile phone only)
+**Demo:** https://shard-frontier-production.up.railway.app  (Mobile phone only)
  
 **Backend Health:** https://radiant-fascination-production.up.railway.app/health  
 
