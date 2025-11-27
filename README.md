@@ -1,5 +1,5 @@
 
-## Shard Frontier — Wave-2 Submission (Awakening Testnet)
+# Shard Frontier — Wave-2 Submission (Awakening Testnet)
 
 **Demo:** https://shard-frontier-production.up.railway.app  (Mobile phone only)
 -  password: biggames01
