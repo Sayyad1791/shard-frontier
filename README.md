@@ -2,8 +2,12 @@
 ## Shard Frontier — Wave-2 Submission (Awakening Testnet)
 
 **Demo:** https://shard-frontier-production.up.railway.app  (Mobile phone only)
+-  password: biggames01
  
 **Backend Health:** https://radiant-fascination-production.up.railway.app/health  
+
+**Video of connecting wallet to app and loading NFTs into game :** https://youtube.com/shorts/LK6ZYyigfY0?feature=shared
+
 
 **Contract (ShardNFT, ERC-721):** 0x0F2F6F22Aa68b11295e2FbEb07416c8910481c11 (Awakening Testnet, Chain ID 1043)
 
