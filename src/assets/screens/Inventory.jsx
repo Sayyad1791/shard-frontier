@@ -31,7 +31,7 @@ const Inventory = () => {
 
   // Lock Inventory to original ShardNFT contract used when NFTs were visible
   const contractAddress = '0x0F2F6F22Aa68b11295e2FbEb07416c8910481c11'
-  const rpcUrl = import.meta.env.VITE_RPC_URL
+  const rpcUrl = import.meta.env.VITE_RPC_URL || import.meta.env.VITE_RPC_URL_ALT || ''
   const ipfsGateway = import.meta.env.VITE_IPFS_GATEWAY || 'https://ipfs.io/ipfs/'
   const chainId = Number(import.meta.env.VITE_CHAIN_ID || 1043)
   const explorerBase = import.meta.env.VITE_EXPLORER_URL || 'https://awakening.bdagscan.com'
@@ -40,6 +40,7 @@ const Inventory = () => {
   const mintValueBDAG = (import.meta.env.VITE_NFT_MINT_VALUE_BDAG || '0').toString()
 
   console.log('Inventory: using fixed contractAddress =', contractAddress)
+  console.log('Inventory: using rpcUrl =', rpcUrl || '[none set]')
 
   const maxTokenId = 20 // bounded scan for testnet
 
@@ -336,9 +337,9 @@ const Inventory = () => {
         <div
           style={{
             position: 'absolute',
-            top: '18%',
+            top: '50%',
             left: '50%',
-            transform: 'translateX(-50%)',
+            transform: 'translate(-50%, -50%)',
             padding: '10px 16px',
             borderRadius: 10,
             border: '1.5px solid rgba(0,255,255,0.9)',

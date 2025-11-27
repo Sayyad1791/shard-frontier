@@ -217,9 +217,9 @@ const Home = () => {
             {[
               { label: 'START', onClick: () => navigate('/dashboard') },
               { label: 'CONTINUE MINING', onClick: () => navigate('/mission') },
-              { label: 'LEADERBOARDS', onClick: () => {} },
-              { label: 'GAME INSTRUCTIONS', onClick: () => {} },
-              { label: 'SETTINGS', onClick: () => {} },
+              { label: 'LEADERBOARDS', onClick: () => navigate('/leaderboard') },
+              { label: 'GAME INSTRUCTIONS', onClick: () => navigate('/instructions') },
+              { label: 'SETTINGS', onClick: () => navigate('/settings') },
               { label: 'DEV INVENTORY', onClick: () => navigate('/inventory') },
               { label: 'EXIT', onClick: () => navigate('/') },
             ].map((item, idx) => {
